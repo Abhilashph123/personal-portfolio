@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Abhilash PH - Fullstack Web Developer">
+    <title>Abhilash PH | Fullstack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="dark-theme">
+    <div id="container3D"></div>
+    <canvas id="cursor-canvas"></canvas>
+
+    <nav class="navbar">
+        <a href="#" class="logo">A<span>.PH</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="smooth-scroll-wrapper">
+        <!-- Hero Section -->
+        <section id="hero" class="parallax-section">
+            <div class="parallax-bg" id="hero-bg"></div>
+            <div class="hero-content">
+                <h2 class="greeting fade-in-up">Hello, I'm</h2>
+                <h1 class="name fade-in-up" style="animation-delay: 0.1s;">Abhilash PH</h1>
+                <h3 class="role fade-in-up" style="animation-delay: 0.2s;">Fullstack Web Developer</h3>
+                <p class="hero-desc fade-in-up" style="animation-delay: 0.3s;">Crafting scalable, high-performance web
+                    applications and custom digital solutions.</p>
+                <div class="hero-cta fade-in-up" style="animation-delay: 0.4s;">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="scroll-indicator"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <div class="parallax-item" data-speed="0.05">
+                    <div class="about-content glass-card fade-in-up">
+                        <p class="summary">Highly skilled WordPress Developer and Full-Stack Engineer with 5 years of
+                            experience. Expertise in custom WordPress development, REST API integration, performance
+                            optimization, and complex MySQL queries.</p>
+                        <p class="summary">Proficient in Next.js, React, Node.js, and MongoDB, delivering scalable,
+                            user-focused solutions by combining modern JS frameworks with robust backend architectures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Professional <span>Skills</span></h2>
+                <div class="skills-grid">
+                    <div class="skill-card glass-card fade-in-up">
+                        <i class="fa-brands fa-react skill-icon"></i>
+                        <h3>Frontend</h3>
+                        <p>React.js, Next.js, JS (ES6+), HTML5, CSS3, Responsive Design</p>
+                    </div>
+                    <div class="skill-card glass-card fade-in-up" style="animation-delay: 0.1s;">
+                        <i class="fa-brands fa-node-js skill-icon"></i>
+                        <h3>Backend</h3>
+                        <p>Node.js, PHP, RESTful APIs, MySQL, MongoDB</p>
+                    </div>
+                    <div class="skill-card glass-card fade-in-up" style="animation-delay: 0.2s;">
+                        <i class="fa-solid fa-layer-group skill-icon"></i>
+                        <h3>CMS & DevOps</h3>
+                        <p>WordPress Dev, Docker, Git, GitHub, Agile Workflows</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Work <span>Experience</span></h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card fade-in-up">
+                            <h3 class="title">Full Stack Developer</h3>
+                            <h4 class="company">APRO IT SOLUTIONS, India</h4>
+                            <span class="date">July 2025 - Present</span>
+                            <ul>
+                                <li>Building responsive UIs with React/Next.js and scalable APIs with Node.js.</li>
+                                <li>Containerizing applications with Docker for standardized environments.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card fade-in-up">
+                            <h3 class="title">Fullstack Developer (WordPress)</h3>
+                            <h4 class="company">MIDNAY, India</h4>
+                            <span class="date">Dec 2023 - June 2025</span>
+                            <ul>
+                                <li>Custom plugin development and advanced theme customization.</li>
+                                <li>Site optimization for page speed, SEO, and mobile responsiveness.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card fade-in-up">
+                            <h3 class="title">Freelance Fullstack Developer</h3>
+                            <h4 class="company">Kerala, India</h4>
+                            <span class="date">June 2023 - Dec 2023</span>
+                            <ul>
+                                <li>Delivered end-to-end solutions for multiple international clients.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+                <div class="projects-grid">
+                    <div class="project-item" id="project-1">
+                        <div class="project-card glass-card fade-in-up">
+                            <h3>Laundry Service App</h3>
+                            <div class="tech-stack"><span>Node.js</span> <span>MongoDB</span> <span>FCM</span></div>
+                            <p>RESTful APIs with JWT authentication, MongoDB schema, and automated push notifications.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-item" id="project-2">
+                        <div class="project-card glass-card fade-in-up">
+                            <h3>Admin Dashboard</h3>
+                            <div class="tech-stack"><span>Socket.IO</span> <span>Express.js</span> <span>MongoDB</span>
+                            </div>
+                            <p>Real-time notifications and data management dashboard for administrative control.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title"><span>Education</span></h2>
+                <div class="education-staggered-grid">
+                    <!-- Education Item 1 -->
+                    <div class="education-item fade-in-up" id="education-1">
+                        <div class="education-card glass-card">
+                            <span class="date" style="color: var(--accent-color); font-size: 0.8rem; margin-bottom: 0.5rem; display: block;">2022 - 2025</span>
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Bachelor of Computer Application</h3>
+                            <p class="university" style="color: var(--text-secondary); font-size: 0.9rem;">Manipal University</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Education Item 2 (Demo) -->
+                    <div class="education-item fade-in-up" style="animation-delay: 0.2s;" id="education-2">
+                        <div class="education-card glass-card">
+                            <span class="date" style="color: var(--accent-color); font-size: 0.8rem; margin-bottom: 0.5rem; display: block;">2021 - 2022</span>
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Higher Secondary Education</h3>
+                            <p class="university" style="color: var(--text-secondary); font-size: 0.9rem;">Board of Kerala</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <div class="contact-grid">
+                    <div class="contact-info glass-card fade-in-up">
+                        <p><i class="fa-solid fa-envelope" style="color: var(--accent-color);"></i>
+                            abhilashph85@gmail.com</p>
+                        <p><i class="fa-solid fa-phone" style="color: var(--accent-color);"></i> +91 8590192435</p>
+                        <p><i class="fa-solid fa-location-dot" style="color: var(--accent-color);"></i> Kerala, India
+                        </p>
+                        <div class="social-links" style="margin-top: 2rem; display: flex; gap: 1rem;">
+                            <a href="#" class="social-icon" style="color: white; font-size: 1.5rem;"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" class="social-icon" style="color: white; font-size: 1.5rem;"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        style="text-align: center; padding: 2rem; color: #444; font-size: 0.8rem; border-top: 1px solid var(--glass-border);">
+        &copy; 2024 Abhilash PH. Designed with Precision.
+    </footer>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="app.js"></script>
+    <script src="cursor-follower.js"></script>
+</body>
+
+</html>

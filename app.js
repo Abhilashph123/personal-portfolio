@@ -138,6 +138,15 @@ const modelMove = () => {
             duration: 2,
             ease: "power2.out"
         });
+
+        // Scale down bee for mobile to avoid covering text
+        const targetScale = isMobile ? 0.6 : 1;
+        gsap.to(bee.scale, {
+            x: targetScale,
+            y: targetScale,
+            z: targetScale,
+            duration: 1
+        });
         gsap.to(bee.rotation, {
             x: new_coordinates.rotation.x,
             y: new_coordinates.rotation.y,

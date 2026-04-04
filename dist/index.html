@@ -10,12 +10,13 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script type="module" crossorigin src="/assets/index-CT2v7hf5.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-dRtsJeSE.css">
+  <script type="module" crossorigin src="/assets/index-CfL6L2-N.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C4x5X3z1.css">
 </head>
 
 <body class="dark-theme">
     <div id="container3D"></div>
+    <canvas id="cursor-canvas"></canvas>
 
     <nav class="navbar">
         <a href="#" class="logo">A<span>.PH</span></a>
@@ -136,7 +137,7 @@
             <div class="container">
                 <h2 class="section-title">Featured <span>Projects</span></h2>
                 <div class="projects-grid">
-                    <div class="parallax-item" data-speed="0.1">
+                    <div class="project-item" id="project-1">
                         <div class="project-card glass-card fade-in-up">
                             <h3>Laundry Service App</h3>
                             <div class="tech-stack"><span>Node.js</span> <span>MongoDB</span> <span>FCM</span></div>
@@ -144,7 +145,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="parallax-item" data-speed="0.15">
+                    <div class="project-item" id="project-2">
                         <div class="project-card glass-card fade-in-up">
                             <h3>Admin Dashboard</h3>
                             <div class="tech-stack"><span>Socket.IO</span> <span>Express.js</span> <span>MongoDB</span>
@@ -160,10 +161,24 @@
         <section id="education" class="section">
             <div class="container">
                 <h2 class="section-title"><span>Education</span></h2>
-                <div class="education-card glass-card fade-in-up" style="max-width: 600px; margin: 0 auto;">
-                    <h3>Bachelor of Computer Application</h3>
-                    <p class="university" style="color: var(--accent-color);">Manipal University</p>
-                    <span class="date" style="color: #666; font-size: 0.9rem;">September 2025</span>
+                <div class="education-staggered-grid">
+                    <!-- Education Item 1 -->
+                    <div class="education-item fade-in-up" id="education-1">
+                        <div class="education-card glass-card">
+                            <span class="date" style="color: var(--accent-color); font-size: 0.8rem; margin-bottom: 0.5rem; display: block;">2022 - 2025</span>
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Bachelor of Computer Application</h3>
+                            <p class="university" style="color: var(--text-secondary); font-size: 0.9rem;">Manipal University</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Education Item 2 (Demo) -->
+                    <div class="education-item fade-in-up" style="animation-delay: 0.2s;" id="education-2">
+                        <div class="education-card glass-card">
+                            <span class="date" style="color: var(--accent-color); font-size: 0.8rem; margin-bottom: 0.5rem; display: block;">2021 - 2022</span>
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Higher Secondary Education</h3>
+                            <p class="university" style="color: var(--text-secondary); font-size: 0.9rem;">Board of Kerala</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -197,6 +212,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="cursor-follower.js"></script>
 </body>
 
 </html>

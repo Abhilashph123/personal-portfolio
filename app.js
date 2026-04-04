@@ -16,7 +16,7 @@ let mixer;
 const loader = new GLTFLoader();
 
 // Updated relative path for local model
-loader.load('./demon_bee_full_texture1.glb',
+loader.load('/demon_bee_full_texture1.glb',
     function (gltf) {
         bee = gltf.scene;
         scene.add(bee);

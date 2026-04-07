@@ -1,6 +1,8 @@
-import * as THREE from 'https://cdn.skypack.dev/three@0.129.0/build/three.module.js';
-import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
-import { gsap } from 'https://cdn.skypack.dev/gsap';
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { gsap } from 'gsap';
+
+const modelUrl = `${import.meta.env.BASE_URL}demon_bee_full_texture1.glb`;
 
 const camera = new THREE.PerspectiveCamera(
     10,
@@ -15,8 +17,7 @@ let bee;
 let mixer;
 const loader = new GLTFLoader();
 
-// Updated relative path for local model
-loader.load('/demon_bee_full_texture1.glb',
+loader.load(modelUrl,
     function (gltf) {
         bee = gltf.scene;
         scene.add(bee);
